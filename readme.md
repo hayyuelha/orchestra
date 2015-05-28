@@ -5,40 +5,18 @@ Real-time traditional music game using expressjs
 ## Installation
 
 1. Install [node.js and npm](https://nodejs.org/).
-2. Restart cmd. Ensure node and npm is working on cmd.
-```
-npm
-```
-```
-node
-```
-3. Install [bower](http://bower.io/) with global parameter.
-```
-npm install -g bower
-```
-4. Install [express generator](http://expressjs.com).
-```
-npm install -g express-generator
-```
+2. Restart cmd. Ensure node and npm is working on cmd. `npm` and `node`
+3. Install [bower](http://bower.io/) with global parameter. `npm install -g bower`
+4. Install [express generator](http://expressjs.com) with global parameter
+`npm install -g express-generator`
 5. Restart cmd. Ensure bower and express is working on cmd by running
-```
-bower
-```
-```
-express
-```
+`bower` and `express`
 6. Run the following commands to update npm and bower dependencies *in the project structure*:
-```
-bower update
-```
-```
-npm update
-```
+`bower update` and 
+`npm update`
 7. Install [mongodb](http://mongodb.org/).
 8. Restart cmd. Ensure mongodb is active.
-```
-mongod
-```
+`mongod`
 
 ## Running
 
