@@ -25,6 +25,7 @@ node bin/www
 ## Dependency Management Structure
 
 Just like PHP Composer
+
 1. NPM - node package manager: server-side modules, example: mongodb connection. saved in node_modules/
 2. Bower : client-side modules, example: bootstrap css. saved in public/vendor
 3. package.json: server-side dependencies 
