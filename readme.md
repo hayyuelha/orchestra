@@ -20,7 +20,11 @@ Real-time traditional music game using expressjs
 
 ## Running
 
+```
 node bin/www
+```
+
+Each time after editing a server-side code, **don't forget to re-run this command**
 
 ## Dependency Management Structure
 
