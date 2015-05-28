@@ -1,27 +1,41 @@
 # Orchestra
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Real-time traditional music game using expressjs
 
-## Pre-Installation
+## Installation
 
-TODO: Describe the installation process
+1. Install [node.js and npm](https://nodejs.org/).
+2. Restart cmd. Ensure node and npm is working on cmd.
+`npm`
+`node`
+3. Install [bower](http://bower.io/) with global parameter.
+`npm install -g bower`
+4. Install [express generator](http://expressjs.com).
+`npm install -g express-generator`
+5. Restart cmd. Ensure bower and express is working on cmd by running
+`bower`
+`express`
+6. Run the following commands to update npm and bower dependencies:
+`bower update`
+`npm update`
+7. Install [mongodb](http://mongodb.org/).
+8. Restart cmd. Ensure mongodb is active.
+`mongod`
 
-## Usage
+## Running
 
-TODO: Write usage instructions
+node bin/www
 
-## Contributing
+## Dependency Management Structure
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+Just like PHP Composer
+1. NPM - node package manager: server-side modules, example: mongodb connection. saved in node_modules/
+2. Bower : client-side modules, example: bootstrap css. saved in public/vendor
+3. package.json: server-side dependencies 
+4. bower.json: client-side dependencies
+5. Our custom stylesheets and javascripts : use public/javascripts and public/stylesheet/
+6. DO NOT edit files in public/vendor. If you want to modify bootstrap css, for example, create new custom css in public/stylesheet, include bootstrap css and custom css
+7. DO NOT edit files in node_modules.
 
 ## History
 
@@ -29,9 +43,9 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
-
 ## License
 
-TODO: Write license
-]]>
+Apache License
+
+#### Why I use English instead of Indonesian language
+Bukan buat gaya-gayaan, kalo app ini jadi lumayan bisa buat resume, and it's generic.
