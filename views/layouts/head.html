@@ -1,0 +1,7 @@
+<div>
+  {% if (authUser == null) %}
+  <a href="/login">Login</a>
+  {% else %}
+  <a href="/logout">Logout ({{authUser.username}})</a>
+  {% endif %}
+</div>

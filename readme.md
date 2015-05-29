@@ -38,16 +38,34 @@ Just like PHP Composer
 6. DO NOT edit files in public/vendor. If you want to modify bootstrap css, for example, create new custom css in public/stylesheet, include bootstrap css and custom css
 7. DO NOT edit files in node_modules.
 
+
+## Application Structure
+
+- Model-View-Controller
+- `models/` the "Model", contains object-database model abstractions.
+- `views/` the "View", contains presentation to clients.
+- `routes/` the "Controller", contains request handler.
+- `config/` global configuration connection, example: mongodb connection.
+
+
 ## References
 
 - [ExpressJS Guide](http://expressjs.com/guide/routing.html)
 - [Mongoose (mongodb + node)](http://mongoosejs.com/docs/guide.html)
 - [Swig tags API (template engine)](http://paularmstrong.github.io/swig/docs/tags/)
 - [GitHub Markdown Basics](https://help.github.com/articles/markdown-basics/)
+- [PassportJS Authentication](http://passportjs.org/docs/authenticate)
+- [Databinding conflict with AngularJS](https://gist.github.com/angelochen960/4188293)
 - [Melisa dan Si Komo](https://www.youtube.com/watch?v=2i8acODLIxc) weleh weleh weleh weleh weleh
 - Feel free to add here
 
-## Credits
+## Team members
+
+- Muhammad Yafi
+- Ahmad Zaky
+- Hayyu Luthfi Hanifah
+- Khoirunnisa Afifah
+- Choirunnisa Fatima
 
 ## License
 

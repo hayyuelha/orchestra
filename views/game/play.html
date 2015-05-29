@@ -1,0 +1,43 @@
+{% extends '../layouts/master.html' %}
+
+{% block content %}
+<button class='btn-play' rel='1'>Play 1</button>
+<button class='btn-play' rel='2'>Play 2</button>
+<button class='btn-stop' rel='1'>Stop 1</button>
+<button class='btn-stop' rel='2'>Stop 2</button>
+
+<audio class='audio' rel='1' controls>
+  <source src='/vendor/test-sound/1.wav' type='audio/wav'>
+</audio>
+<audio class='audio' rel='2' controls>
+  <source src='/vendor/test-sound/2.wav' type='audio/wav'>
+</audio>
+{% endblock content %}
+
+{% block script %}
+{% parent %}
+<script src='/vendor/socket.io-client/socket.io.js'></script>
+
+
+{# audio handler #}
+<script>
+$(document).ready(function(){
+  $(".btn-play").click(function(){
+    var rel = $(this).attr('rel');
+    $('.audio[rel='+rel+']').trigger('play');
+  });
+  $(".btn-stop").click(function(){
+    var rel = $(this).attr('rel');
+    var audioObject = $('.audio[rel='+rel+']');
+    audioObject.prop('currentTime',0);
+    audioObject.trigger('pause');
+  })
+});
+</script>
+
+{# socket connection #}
+<script>
+</script>
+
+
+{% endblock script %}

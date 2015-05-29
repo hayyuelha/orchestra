@@ -6,7 +6,7 @@ var sha1 = require('sha1');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   User.find(function(err,users){
-    res.json(users);
+    res.render('user/index.html',{users: users});
   });
 });
 
@@ -18,10 +18,11 @@ router.get('/add-dummy',function(req,res){
     name : 'Muhammad Yafi',
     email : 'yafithekid212@gmail.com'
   });
-  console.log('here');
 
   user.save(function(err){
-    if (err) console.log(err);
+    if (err){
+      console.log(err);
+    }
     res.send('Data saved');
   });
 });
