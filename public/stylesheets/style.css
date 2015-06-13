@@ -6,3 +6,39 @@ body {
 a {
   color: #00B7FF;
 }
+
+.wiki-container {
+  margin-top: 100px;
+}
+
+.wiki-content {
+
+}
+
+.wiki-title {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.wiki-subtitle {
+  font-size: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.wiki-sidebar {
+  text-align: center;
+
+}
+
+.wiki-sidebar .subtitle {
+  font-weight: bold;
+}
+
+.wiki-sidebar .content {
+  padding-bottom:10px;
+} 
+
+.search-result h1 {
+  font-size: 20px;
+}

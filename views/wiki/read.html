@@ -1,0 +1,64 @@
+{% extends '../layouts/master.html' %}
+
+{% block content %}
+<div class='wiki-container'>
+  {% include './_search.html' %}
+  <div class='col-md-8'>
+    <div class='wiki-title'>Gamelan</div>
+    <div class='wiki-content'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class='wiki-subtitle'>Sejarah</div>
+    <div class='wiki-content'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class='wiki-subtitle'>Cara Memainkan</div>
+    <div class='wiki-content'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <div class='col-md-4 wiki-sidebar'>
+    <h4>Gamelan</h4>
+    <img src='/images/dummy-wiki.jpg'><br/><br/>
+    <div class='subtitle'>Asal</div>
+    <div class='content'>Yogyakarta</div>
+    <div class='subtitle'>Tangga Nada</div>
+    <div class='content'>Pentatonis</div>
+    <div class='subtitle'>Bunyi</div>
+    <div class='content'>
+      <div>
+        Do  
+        <audio controls><source src='/vendor/test-sound/1.wav'></audio>
+      </div>
+      <div>
+        Re  <audio controls><source src='/vendor/test-sound/1.wav'></audio>
+      </div>
+      <div>
+        Mi  <audio controls><source src='/vendor/test-sound/1.wav'></audio>
+      </div>
+      <div>
+        Sol <audio controls><source src='/vendor/test-sound/1.wav'></audio>
+      </div>
+      <div>
+        La  <audio controls><source src='/vendor/test-sound/1.wav'></audio>
+      </div>
+    </div>
+  </div>
+  
+</div>
+{% endblock content %}

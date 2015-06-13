@@ -18,6 +18,15 @@
 {% parent %}
 <script src='/vendor/socket.io-client/socket.io.js'></script>
 
+{# socket connection #}
+<script>
+var socket = io();
+
+socket.on('tone',function(data){
+  var rel = data.id;
+  $('.audio[rel='+rel+']').trigger('play');
+});
+</script>
 
 {# audio handler #}
 <script>
@@ -25,6 +34,10 @@ $(document).ready(function(){
   $(".btn-play").click(function(){
     var rel = $(this).attr('rel');
     $('.audio[rel='+rel+']').trigger('play');
+    //kirim data ke server
+    socket.emit('tone',{
+      'id': rel
+    });
   });
   $(".btn-stop").click(function(){
     var rel = $(this).attr('rel');
@@ -34,10 +47,5 @@ $(document).ready(function(){
   })
 });
 </script>
-
-{# socket connection #}
-<script>
-</script>
-
 
 {% endblock script %}

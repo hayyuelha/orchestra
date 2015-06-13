@@ -14,6 +14,7 @@ var flash = require('express-flash');
 var routes = require('./routes/index');
 var userController = require('./routes/user');
 var gameController = require('./routes/game');
+var wikiController = require('./routes/wiki');
 
 var User = require('./models/user');
 
@@ -52,6 +53,7 @@ app.use(function(req,res,next){
 app.use('/', routes);
 app.use('/user', userController);
 app.use('/game',gameController);
+app.use('/wiki',wikiController);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
